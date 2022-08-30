@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="inactive" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+
+        <item name="android:textColorPrimary">@color/textHintColor</item>
+        <item name="android:textColor">@color/textHintColor</item>
+    </style>
+
+    <style name="active" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="android:textColorPrimary">@color/textHintColor</item>
+        <item name="android:textColor">@color/textHintColor</item>
+    </style>
+</resources>

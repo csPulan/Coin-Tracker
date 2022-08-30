@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditProfile">
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+
+        android:id="@+id/bottom_navigator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@color/testColor"
+        app:itemIconTint="@drawable/serlector"
+        app:itemTextColor="@drawable/serlector"
+        app:menu="@menu/menu"
+
+        />
+
+    <ImageView
+        android:id="@+id/profileImageView"
+        android:layout_width="131dp"
+        android:layout_height="143dp"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/ic_baseline_person_24" />
+
+    <EditText
+        android:id="@+id/profileFullName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:ems="10"
+        android:hint="Your Name"
+        android:textColor="@color/black"
+        android:inputType="textPersonName"
+        android:layout_below="@id/profileImageView"/>
+
+    <EditText
+        android:id="@+id/profileEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:ems="10"
+        android:hint="Your Email Address"
+        android:textColor="@color/black"
+        android:inputType="textEmailAddress"
+        android:layout_below="@id/profileFullName"
+        />
+
+    <EditText
+        android:id="@+id/profilePhoneNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:ems="10"
+        android:inputType="phone"
+        android:textColor="@color/black"
+        android:hint="Phone"
+        android:layout_below="@id/profileEmailAddress"
+        />
+
+    <Button
+        android:id="@+id/saveProfileInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Save"
+        android:textColor="@color/black"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/profilePhoneNo"
+        />
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AlertDialog" parent="Theme.MaterialComponents.DayNight.Dialog.Alert">
+        <item name="android:textColor">@color/textcolor</item>
+        <item name="android:textColorPrimary">@color/textcolor</item>
+        <item name="android:editTextColor">@color/teal_200</item>
+    </style>
+
+
+</resources>

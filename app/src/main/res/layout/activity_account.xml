@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".accountActivity">
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+
+        android:id="@+id/bottom_navigator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@color/testColor"
+        app:itemIconTint="@drawable/serlector"
+        app:itemTextColor="@drawable/serlector"
+        app:menu="@menu/menu"
+
+        />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom_navigator"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="20dp"
+        android:onClick="logout"
+        android:text="LOGOUT"
+        android:textColor="@color/cardColor"
+        android:backgroundTint="@color/buttonColor"/>
+
+    <Button
+        android:id="@+id/resetPasswordLocal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom_navigator"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="70dp"
+        android:text="RESET PASSWORD"
+        android:textColor="@color/cardColor"
+        android:backgroundTint="@color/buttonColor"/>
+
+    <Button
+        android:id="@+id/changeProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom_navigator"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="120dp"
+        android:backgroundTint="@color/buttonColor"
+        android:text="CHANGE PROFILE"
+        android:textColor="@color/cardColor" />
+
+    <Button
+        android:id="@+id/resendCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="@color/buttonColor"
+        android:text="Verify Now"
+        android:textColor="@color/cardColor"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/profileImage"
+        android:layout_width="120sp"
+        android:layout_height="120sp"
+        android:layout_below="@+id/resendCode"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentEnd="false"
+        android:layout_centerInParent="true"
+        app:srcCompat="@drawable/ic_baseline_person_24" />
+
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="50dp"
+        android:layout_below="@id/profileImage"
+        app:srcCompat="@drawable/ic_baseline_person_24" />
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/profileImage"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_toRightOf="@+id/imageView2"
+        android:text="Full Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/profileName"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profileImage"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@+id/imageView2"
+        android:gravity="center_horizontal"
+        android:text="Your Name"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profileName"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/ic_baseline_email_24" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/profileName"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_toRightOf="@+id/imageView2"
+        android:text="Email"
+        />
+
+    <TextView
+        android:id="@+id/profileEmail"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/textView4"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/imageView3"
+        android:text="Your Email Address"
+        android:textSize="16sp"
+        android:textStyle="bold"
+         />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profileEmail"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/ic_baseline_local_phone_24" />
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/profileEmail"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/imageView4"
+        android:text="Phone"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/profilePhone"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView5"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/imageView4"
+        android:gravity="center"
+        android:text="Phone Number"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/verifyMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profilePhone"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:gravity="center_horizontal"
+        android:text="Email Not Verified !"
+        android:textColor="#C2185B"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+</RelativeLayout>

@@ -1,0 +1,294 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/infoActivityBG"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/coinName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="name"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:textColor="@color/infoActivityTitleText" />
+
+    <TextView
+        android:id="@+id/coinPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/coinName"
+        android:gravity="center"
+        android:text="price"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/infoActivityTitleText"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_below="@id/coinPrice"
+        android:background="#e0f2f1"
+
+        android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/symbolText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/infoActivityColorOne"
+                    android:padding="10dp"
+                    android:text="Symbol:"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textAppearance="@android:style/TextAppearance.Medium"
+                    android:textColor="@color/textcolor" />
+
+                <TextView
+                    android:id="@+id/symbol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/infoActivityColorOne"
+                    android:padding="10dp"
+                    android:text="symbol"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textAppearance="@android:style/TextAppearance.Medium"
+                    android:textColor="@color/textcolor" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/slugText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/infoActivityColorTwo"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:text="Slug:"
+                    android:gravity="center"
+                    android:textAppearance="@android:style/TextAppearance.Medium"
+                    android:textColor="@color/textcolor" />
+
+                <TextView
+                    android:id="@+id/slug"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/infoActivityColorTwo"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:text="slug"
+                    android:gravity="center"
+                    android:textAppearance="@android:style/TextAppearance.Medium"
+                    android:textColor="@color/textcolor" />
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/volume24hText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/infoActivityColorOne"
+                android:padding="10dp"
+                android:text="Volume 24H:"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="@color/textcolor" />
+
+            <TextView
+                android:id="@+id/volume24h"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/infoActivityColorOne"
+                android:padding="10dp"
+                android:layout_weight="1"
+                android:text="volume24h"
+                android:gravity="center"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="@color/textcolor" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/volume_change_24hText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/infoActivityColorTwo"
+                android:padding="10dp"
+                android:text="Volume Change 24H:"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="@color/textcolor" />
+
+
+            <TextView
+                android:id="@+id/volume_change_24h"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/infoActivityColorTwo"
+                android:padding="10dp"
+                android:text="volume_change_24h"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="@color/textcolor" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/market_capText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/infoActivityColorOne"
+                android:padding="10dp"
+                android:text="Market Cap:"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="@color/textcolor" />
+
+            <TextView
+                android:id="@+id/market_cap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/infoActivityColorOne"
+                android:padding="10dp"
+                android:text="market_cap"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="@color/textcolor" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/change1hText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/infoActivityColorTwo"
+                android:padding="10dp"
+                android:text="1 Hour Change:"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="@color/textcolor" />
+
+            <TextView
+                android:id="@+id/change1h"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/infoActivityColorTwo"
+                android:padding="10dp"
+                android:text="change1h"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="@color/textcolor" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/change24hText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/infoActivityColorOne"
+                android:padding="10dp"
+                android:text="24 Hour Change:"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="@color/textcolor" />
+
+            <TextView
+                android:id="@+id/change24h"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/infoActivityColorOne"
+                android:padding="10dp"
+                android:text="change24h"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="@color/textcolor" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/change7dText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/infoActivityColorTwo"
+                android:padding="10dp"
+                android:text="7 Days Change:"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="@color/textcolor" />
+
+            <TextView
+                android:id="@+id/change7d"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/infoActivityColorTwo"
+                android:padding="10dp"
+                android:text="change7d"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="@color/textcolor" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>

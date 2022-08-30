@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.cryptoscholartracker">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="Coin Tracker"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CryptoScholarTracker">
+        <activity
+            android:name=".axiewithHistory"
+            android:exported="true"
+            android:windowSoftInputMode="stateVisible|adjustResize"/>
+        <activity
+            android:name=".InfoActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Axie"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Register"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Login"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EditProfile"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".trackerActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".accountActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/idaxieHistory"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    app:cardBackgroundColor="@color/UIColor"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="3dp">
+
+    <RelativeLayout
+        android:id="@+id/idHistory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--text view for displaying symbol-->
+        <TextView
+            android:id="@+id/historyRonin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="2dp"
+            android:padding="3dp"
+            android:text="Ronin Address: "
+            android:textColor="@color/textcolor"
+            android:textStyle="bold" />
+
+        <!--text view for displaying currency name-->
+        <TextView
+            android:id="@+id/Percentage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/historyRonin"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="2dp"
+            android:padding="3dp"
+            android:text="Name"
+            android:textColor="@color/textcolor"
+            android:textSize="13sp" />
+
+        <!--text view for displaying currency rate-->
+
+
+    </RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>
