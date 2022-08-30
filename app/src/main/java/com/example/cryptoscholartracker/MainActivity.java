@@ -252,7 +252,7 @@ public class MainActivity extends AppCompatActivity implements CurrencyRVAdapter
             @Override
             public Map<String, String> getHeaders(){
                 HashMap<String,String> headers = new HashMap<>();
-                headers.put("X-CMC_PRO_API_KEY","4e230ec4-4e2b-43ef-85d0-f7cfaa003f96");
+                headers.put("X-CMC_PRO_API_KEY","YOUR_API_KEY");
                 return  headers;
 
             }
